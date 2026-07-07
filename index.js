@@ -454,9 +454,9 @@ function calculateMarketValue(cattleData, currentMilkYield) {
         }
 
         // Pregnancy based market value calculation
-        if(pregnancy === 'yes' && noOfMonths >= 1 && noOfMonths <= 4) {
+        if(pregnancy === 'yes' && noOfMonths >= 2 && noOfMonths <= 4) {
             marketValue += 2000;
-        } else if(pregnancy === 'yes' && noOfMonths >= 7 && noOfMonths <= 7) {
+        } else if(pregnancy === 'yes' && noOfMonths >= 5 && noOfMonths <= 7) {
             marketValue += 5000;
         } else if(pregnancy === 'yes' && noOfMonths >= 8 && noOfMonths <= 10) {
             marketValue += 9000;
@@ -496,9 +496,9 @@ function calculateMarketValue(cattleData, currentMilkYield) {
         }
 
         // Pregnancy based market value calculation
-        if(pregnancy === 'yes' && noOfMonths >= 1 && noOfMonths <= 4) {
+        if(pregnancy === 'yes' && noOfMonths >= 2 && noOfMonths <= 4) {
             marketValue += 3000;
-        } else if(pregnancy === 'yes' && noOfMonths >= 7 && noOfMonths <= 7) {
+        } else if(pregnancy === 'yes' && noOfMonths >= 5 && noOfMonths <= 7) {
             marketValue += 7000;
         } else if(pregnancy === 'yes' && noOfMonths >= 8 && noOfMonths <= 10) {
             marketValue += 14000;
