@@ -18,6 +18,8 @@ const getNewHealthScore = (data) => {
       let cattleType = data.cattleType || data.stage;
   
       var color = data.BCS ? data.BCS.HealthIndex : data.mlBcsScore || '' ;
+        
+      console.log(cattleType, color, pregnancy, days, months);
   
       if (cattleType.toLowerCase() == 'cow') {
         if (days >= 0 && days <= 30) {
@@ -393,9 +395,11 @@ const getNewHealthScore = (data) => {
         }
       }
       else {
+        console.log('Cattle type not recognized:', cattleType);
         org = "0"
       }
     } catch (e) {
+      console.log('Error calculating health score: 399', e);
       org = '0'
     }
     return org;
