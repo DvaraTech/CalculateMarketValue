@@ -408,6 +408,7 @@ function calculateMarketValue(cattleData, currentMilkYield) {
     try {
         healthScore = Number(getNewHealthScore(cattleData));
     } catch (e) {
+        console.log('Error calculating health score:', e);
         healthScore = 0;
     }
     const noOfMonths = cattleData.noOfMonths || cattleData.noOfMonthsIfPregnant;
